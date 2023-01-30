@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      #grid {
+        border: 5px solid pink;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        /* 왼쪽 컨텐츠는 150px로 고정, 오른쪽 컨텐츠는 화면 크기에 맞춰 꽉차게 자동 조절됨 */
+        /* 2fr 1fr - 화면 전체 너비를 2:1 비율로 차지 */
+      }
+      div {
+        border: 5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div>NAVIGATION</div>
+      <div>ARTICLE</div>
+      <!-- div는 block level -->
+      <!-- span은 inline -->
+    </div>
+  </body>
+</html>

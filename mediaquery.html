@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+      /* 웹페이지 우클릭-검사-창 크기 바꾸면 오른쪽 위에 크기 나옴 */
+      div {
+        border: 10px solid green;
+        font-size: 60px;
+      }
+      @media (min-width: 800px) {
+        /* : if width>800 */
+        div {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>Responsive</div>
+  </body>
+</html>
